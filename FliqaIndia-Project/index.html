@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fliq India</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26d5a716dd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!----------------------------------------------NAVBAR-------------------------------------------------------------->
+            <nav class="navbar navbar-expand" id="navbar">
+                <div class="container-fluid">
+                    <div class="col-2"><a id="nav-logo" href="#"><img src="logo.png" alt="logo" ></a></div>
+                        
+                    <div class="col-8" style="display: inline-flex;margin-right: 80px;">
+                        <div class="col">HOME</div></a>
+                        <div class="col">ABOUT US</div>
+                        <div class="col">SERVICES</div>
+                        <div class="col">BLOG</div>
+                        
+                        <div class="col">TRAVELS</div>
+                        <div class="col">TUTORIAL</div>
+                        <div class="col" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN/SIGN UP</div>
+                    </div>
+
+                    <div class="col-2" style="display: inline-flex;">
+                        <div class="col-1" id="ilogo"><i class="fab fa-facebook"></i></div>
+                        <div class="col-1" id="ilogo"><i class="fab fa-whatsapp"></i></div>
+                        <div class="col-1" id="ilogo"><i class="fab fa-linkedin"></i></div>
+                        <div class="col-1" id="ilogo"><i class="fab fa-youtube-square" style="border-radius:50%;"></i></div>
+                        <div class="col-1" id="ilogo"><i class="fab fa-instagram-square"></i></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+<!----------------------------------------------BODY-------------------------------------------------------------->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-4" id="data">
+                <div style="margin: 192px 0 0 59px;">
+
+                    <p id="date" >09 JUL, 2020</p>
+                    <h3 id="head1">6 Portrait Photography Tips you must know</h3>
+                    <p id="para1">Capturing portraits perfectly is one of the most difficult and ..........</p>
+                    <h3 id="head2" >Like this article 
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-thumbs-up" style="color:black;" id="numLike"><span style="color: white;" id="likeValue">35</span></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-thumbs-down" style="color: black;" id="numDislike"><span style="color: white;"id="dislikeValue">2</span></i></a>
+                    </h3>
+
+                    <input type="text" name="comment" placeholder="Write a comment" id="input" style="text-decoration: none;" value="">
+
+                </div>
+            </div>
+
+            <div class="col-12" id="photo">
+                <img src="cam.png" alt="image" id="image" style="width: 100vw;height: 100vh;">
+            </div>
+
+        </div>
+    </div>
+    
+    <!----------------------------------------------Modal--------------------------------------------------------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Please Login to continue!!!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="abc@xyz.com" >
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    </div>
+                </form>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="set">Continue</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
